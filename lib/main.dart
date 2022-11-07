@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       initialRoute:
-          FirebaseAuth.instance.currentUser == null ? '/Sign-in' : '/profile',
+          FirebaseAuth.instance.currentUser == null ? '/sign-in' : '/profile',
       routes: {
         '/sign-in': (context) {
           return SignInScreen(
